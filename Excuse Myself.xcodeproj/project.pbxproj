@@ -13,6 +13,10 @@
 		1899EC9D251939CE00386982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1899EC9B251939CE00386982 /* Main.storyboard */; };
 		1899EC9F251939D200386982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1899EC9E251939D200386982 /* Assets.xcassets */; };
 		1899ECA2251939D200386982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1899ECA0251939D200386982 /* LaunchScreen.storyboard */; };
+		1899ECAA25193A2F00386982 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899ECA925193A2F00386982 /* MainVC.swift */; };
+		1899ECAC25193B5500386982 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899ECAB25193B5500386982 /* MainView.swift */; };
+		1899ECAE25193CCA00386982 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899ECAD25193CCA00386982 /* Extensions.swift */; };
+		1899ECB025193F3600386982 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899ECAF25193F3600386982 /* Messages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		1899EC9E251939D200386982 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1899ECA1251939D200386982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1899ECA3251939D200386982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1899ECA925193A2F00386982 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		1899ECAB25193B5500386982 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1899ECAD25193CCA00386982 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1899ECAF25193F3600386982 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182EBD53253CC8B800DE373D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1899ECAF25193F3600386982 /* Messages.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		182EBD54253CC8BC00DE373D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1899ECAB25193B5500386982 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		182EBD55253CC8C300DE373D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1899ECA925193A2F00386982 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		182EBD56253CC8D400DE373D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1899ECAD25193CCA00386982 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		1899EC89251939CE00386982 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +96,10 @@
 		1899EC94251939CE00386982 /* Excuse Myself */ = {
 			isa = PBXGroup;
 			children = (
+				182EBD56253CC8D400DE373D /* Utils */,
+				182EBD55253CC8C300DE373D /* Controller */,
+				182EBD54253CC8BC00DE373D /* View */,
+				182EBD53253CC8B800DE373D /* Model */,
 				1899EC95251939CE00386982 /* AppDelegate.swift */,
 				1899EC97251939CE00386982 /* SceneDelegate.swift */,
 				1899EC99251939CE00386982 /* ViewController.swift */,
@@ -94,7 +138,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Mattias Törnqvist";
 				TargetAttributes = {
 					1899EC91251939CE00386982 = {
@@ -139,8 +183,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1899EC9A251939CE00386982 /* ViewController.swift in Sources */,
+				1899ECAE25193CCA00386982 /* Extensions.swift in Sources */,
+				1899ECAA25193A2F00386982 /* MainVC.swift in Sources */,
 				1899EC96251939CE00386982 /* AppDelegate.swift in Sources */,
+				1899ECAC25193B5500386982 /* MainView.swift in Sources */,
 				1899EC98251939CE00386982 /* SceneDelegate.swift in Sources */,
+				1899ECB025193F3600386982 /* Messages.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +240,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -216,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,6 +301,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -270,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
